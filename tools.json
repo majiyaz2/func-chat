@@ -1,0 +1,121 @@
+{"tools" : [
+    {
+        "type": "function",
+        "function": {
+            "name": "get_employee_info",
+            "description": "Get information about an employee by ID or name",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "employee_id": {
+                        "type": "string",
+                        "description": "The employee ID."
+                    },
+                    "name": {
+                        "type": "string",
+                        "description": "The employee name."
+                    }
+                },
+                "required": []
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "get_employee_skills",
+            "description": "Get skills of an employee by ID or name",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "employee_id": {
+                        "type": "string",
+                        "description": "The employee ID."
+                    },
+                    "name": {
+                        "type": "string",
+                        "description": "The employee name."
+                    }
+                },
+                "required": []
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "get_projects_by_employee",
+            "description": "Get projects associated with an employee by ID or name",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "employee_id": {
+                        "type": "string",
+                        "description": "The employee ID."
+                    },
+                    "name": {
+                        "type": "string",
+                        "description": "The employee name."
+                    }
+                },
+                "required": []
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "get_project_info",
+            "description": "Get information about a project by ID or title",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "project_id": {
+                        "type": "string",
+                        "description": "The project ID."
+                    },
+                    "title": {
+                        "type": "string",
+                        "description": "The project title."
+                    }
+                },
+                "required": []
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "get_projects_by_status",
+            "description": "Get projects with a specific status",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "status": {
+                        "type": "string",
+                        "description": "The project status (e.g., 'Completed', 'In Progress')."
+                    }
+                },
+                "required": ["status"]
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "get_projects_by_technology",
+            "description": "Get projects that use a specific technology",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "technology": {
+                        "type": "string",
+                        "description": "The technology to filter by (e.g., 'React', 'Python')."
+                    }
+                },
+                "required": ["technology"]
+            }
+        }
+    }
+]
+}

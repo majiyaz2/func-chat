@@ -5,3 +5,4 @@ pandas
 typing-extensions
 python-multipart
 mistralai
+httpx
